@@ -1,0 +1,30 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+/* Media queries */
+
+/* small screen */
+
+@mixin phone {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+/* sedium screen */
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}

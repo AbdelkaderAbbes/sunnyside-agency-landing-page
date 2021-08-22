@@ -1,0 +1,27 @@
+@import "variables";
+@import "query";
+@import "animation";
+@import "header";
+@import "global";
+@import "features";
+@import "clients";
+@import "images";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  overflow-x: hidden;
+}
+
+// font-family: 'Barlow', sans-serif;
+// font-family: 'Fraunces', serif;
+
+.flex {
+  display: flex;
+}

@@ -1,0 +1,72 @@
+.clients {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  text-align: center;
+
+  #{&}__header {
+    margin-bottom: 5.125rem;
+
+    & h1 {
+      font-size: 1rem;
+      letter-spacing: 7px;
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      color: $Dark-gray-blue;
+      text-transform: uppercase;
+    }
+
+  }
+
+  #{&}__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    column-gap: 40px;
+
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+      row-gap: 4.5rem;
+    }
+
+    & .client {
+      font-family: 'Barlow', sans-serif;
+      color: $Dark-gray-blue;
+      &__img {
+        margin-bottom: 4.3125rem;
+
+        & img {
+          border-radius: 50%;
+          width: 4.5rem;
+        }
+
+      }
+
+      &__body {
+        @media (max-width: 800px) {
+          width: 100%;
+          max-width: 400px;
+          margin: 0 auto 2.8125rem;
+        }
+        margin-bottom: 4.3125rem;
+      }
+
+      &__foot {
+
+        & span {
+          display: block;
+          color: $Gray-blue;
+          &:first-child {
+          font-family: 'Fraunces', serif;
+          font-weight: 900;
+          color: $V-dark-des-blue;
+          margin-bottom: 1.375rem;
+        }
+        }
+
+      }
+
+    }
+
+  }
+
+}
